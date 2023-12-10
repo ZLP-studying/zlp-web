@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
+    <title>Контакты — ZLP.Cloud</title>
+    <link href="favicon.ico" rel="icon" type="text/x-icon">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="/">
+        <img alt="ZLP.Cloud" class="logo" src="images/zlp-cloud.png">
+    </a>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/docs.html">Документация</a>
+        <a href="/contacts.html">Контакты</a>
+    </nav>
+</header>
+<div class="form-container, bg-image">
+    <form action="https://httpbin.org/post" enctype="multipart/form-data" method="POST">
+        <label for="fullName">ФИО</label>
+        <input id="fullName" name="fullName" required type="text">
+
+        <label for="email">Электронная почта</label>
+        <input id="email" name="email" required type="email">
+
+        <p>Откуда узнали о нас<br>
+            <input id="source1" name="source" type="radio" value="source1">
+            <label for="source1">ZLP.Design</label><br>
+            <input id="source2" name="source" type="radio" value="source2">
+            <label for="source2">ZLP.Trading</label><br>
+            <input id="source3" name="source" type="radio" value="source3">
+            <label for="source3">ZLP.Esports</label>
+        </p>
+
+        <label for="inquiryType">Тип обращения</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="complaint">Заявка</option>
+            <option value="suggestion">Предложение</option>
+        </select>
+
+        <label for="message">Текст обращения</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="attachments">Вложения</label>
+        <input id="attachments" multiple name="attachments" type="file">
+        <br>
+
+        <div>
+            <input id="consent" name="consent" required type="checkbox">
+            <label for="consent">Даю согласие на обработку персональных данных</label>
+        </div>
+
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+<footer>
+    <p>&copy; 2023 Самойлов Даниил</p>
+</footer>
+</body>
+</html>
