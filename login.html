@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
+    <title>Контакты — ZLP.Cloud</title>
+    <link href="favicon.ico" rel="icon" type="text/x-icon">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="/">
+        <img alt="ZLP.Cloud" class="logo" src="images/zlp-cloud.png">
+    </a>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/docs.html">Документация</a>
+        <a href="/contacts.html">Контакты</a>
+        <a href="/login.html">Войти</a>
+    </nav>
+</header>
+<div class="form-container, bg-image">
+    <form action="https://httpbin.org/post" enctype="multipart/form-data" method="POST">
+        <label for="login">Логин</label>
+        <input id="login" name="login" required type="text">
+
+        <label for="password">Пароль</label>
+        <input id="password" name="password" required type="password">
+
+        <div>
+            <input id="remember" name="remember" type="checkbox">
+            <label for="remember">Запомнить меня</label>
+        </div>
+
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+<footer>
+    <p>&copy; 2023 Самойлов Даниил</p>
+</footer>
+</body>
+</html>
