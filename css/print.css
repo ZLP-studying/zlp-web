@@ -1,0 +1,44 @@
+@media print {
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: black; /* Ensure text is black for printing */
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, footer, .bg-image, .form-container, nav, img.logo {
+        display: none; /* Remove elements that are not needed in print */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0; /* Simplify margin for images */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%; /* Tables should span the full width */
+    }
+
+    th, td {
+        border: 1px solid black; /* Add border for clarity in print */
+        padding: 5px; /* Reduce padding for space saving */
+        text-align: left; /* Align text to left for readability */
+    }
+
+    form {
+        border: none;
+        box-shadow: none; /* Remove box shadow for cleaner print */
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], select, textarea {
+        border: 1px solid black; /* Ensure borders are visible */
+    }
+
+    input[type="submit"] {
+        display: none; /* Hide submit buttons */
+    }
+}
