@@ -19,44 +19,46 @@
         <a href="/login.html">Войти</a>
     </nav>
 </header>
-<div class="form-container, bg-image">
-    <form action="https://httpbin.org/post" enctype="multipart/form-data" method="POST">
-        <label for="fullName">ФИО</label>
-        <input id="fullName" name="fullName" required type="text">
+<main>
+    <div class="form-container, bg-image">
+        <form action="https://httpbin.org/post" enctype="multipart/form-data" method="POST">
+            <label for="fullName">ФИО</label>
+            <input id="fullName" name="fullName" required type="text">
 
-        <label for="email">Электронная почта</label>
-        <input id="email" name="email" required type="email">
+            <label for="email">Электронная почта</label>
+            <input id="email" name="email" required type="email">
 
-        <p>Откуда узнали о нас<br>
-            <input id="source1" name="source" type="radio" value="source1">
-            <label for="source1">ZLP.Design</label><br>
-            <input id="source2" name="source" type="radio" value="source2">
-            <label for="source2">ZLP.Trading</label><br>
-            <input id="source3" name="source" type="radio" value="source3">
-            <label for="source3">ZLP.Esports</label>
-        </p>
+            <p>Откуда узнали о нас<br>
+                <input id="source1" name="source" type="radio" value="source1">
+                <label for="source1">ZLP.Design</label><br>
+                <input id="source2" name="source" type="radio" value="source2">
+                <label for="source2">ZLP.Trading</label><br>
+                <input id="source3" name="source" type="radio" value="source3">
+                <label for="source3">ZLP.Esports</label>
+            </p>
 
-        <label for="inquiryType">Тип обращения</label>
-        <select id="inquiryType" name="inquiryType">
-            <option value="complaint">Заявка</option>
-            <option value="suggestion">Предложение</option>
-        </select>
+            <label for="inquiryType">Тип обращения</label>
+            <select id="inquiryType" name="inquiryType">
+                <option value="complaint">Заявка</option>
+                <option value="suggestion">Предложение</option>
+            </select>
 
-        <label for="message">Текст обращения</label>
-        <textarea id="message" name="message" required></textarea>
+            <label for="message">Текст обращения</label>
+            <textarea id="message" name="message" required></textarea>
 
-        <label for="attachments">Вложения</label>
-        <input id="attachments" multiple name="attachments" type="file">
-        <br>
+            <label for="attachments">Вложения</label>
+            <input id="attachments" multiple name="attachments" type="file">
+            <br>
 
-        <div>
-            <input id="consent" name="consent" required type="checkbox">
-            <label for="consent">Даю согласие на обработку персональных данных</label>
-        </div>
+            <div>
+                <input id="consent" name="consent" required type="checkbox">
+                <label for="consent">Даю согласие на обработку персональных данных</label>
+            </div>
 
-        <input type="submit" value="Отправить">
-    </form>
-</div>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</main>
 <footer>
     <p>&copy; 2023 Самойлов Даниил</p>
 </footer>
