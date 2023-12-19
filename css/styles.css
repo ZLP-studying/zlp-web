@@ -126,3 +126,115 @@ input[type="submit"]:hover {
     align-items: start;
     justify-content: center;
 }
+
+.calc-container {
+    /*margin-top: 150px;*/
+    width: 450px;
+    height: 600px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /*background-color: rgb(128, 128, 128);*/
+    border: 2px solid black;
+
+    max-width: 400px;
+    margin: 50px auto; /* Центрирование калькулятора */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для калькулятора */
+}
+
+.screen {
+    /*margin-bottom: 50px;*/
+    width: 400px;
+    height: 100px;
+    /*background-color: white;*/
+    color: #fff;
+    border-radius: 10px;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    border: 2px solid black;
+
+    background-color: #eaeaea; /* Светло-серый фон для экрана */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.screen-text {
+    padding: 30px;
+    color: black;
+    font-size: 30px;
+}
+
+.buttons {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.key {
+    font-size: 20px;
+    border: 2px solid #000;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #888888;
+}
+
+#game {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#board {
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 90px;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+
+.message {
+    border: 1px solid black;
+    max-width: 160px;
+    padding: 10px;
+    margin: 3px auto;
+}
+
+.error {
+    background-color: #c81e1e;
+    border-color: #620202;
+}
+
+.success {
+    background-color: #16cf01;
+    border-color: #014f08;
+}
